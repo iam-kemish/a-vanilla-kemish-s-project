@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A vanilla js made simple form project</title>
+  </head>
+  <body>
+    <div class="container my-3">
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">First Name:</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Your first name "/>
+        </div>
+
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Last name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress"
+            placeholder="Your last name"
+          />
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Address</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress2"
+            placeholder="Apartment, studio, or floor"
+          />
+        </div>
+        <label for="start">Your year of birth:</label>
+
+        <select id="CalenderSelect" onchange="onOptionChange()">
+            <option value="">Select a specific Calender</option>
+            <option value="ad">AD</option>
+            <option value="bs">BS</option>
+          </select>
+          <br>
+          <br>
+          <select id="yearSelect">
+          </select>
+
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
